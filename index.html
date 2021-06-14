@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="modal-show">
+    <!-- Header -->
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <img src="./images/logo.svg" alt="Logo" />
+      </a>
+
+      <div class="header__score">
+        <p>score</p>
+        <span>0</span>
+      </div>
+    </header>
+
+    <main class="main-sec">
+      <!-- Main Game -->
+      <section class="game-container">
+        <div class="paper-con">
+          <button data-id="paper">
+            <img src="./images/icon-paper.svg" alt="Paper" />
+          </button>
+        </div>
+
+        <div class="scissors-con">
+          <button data-id="scissors">
+            <img src="./images/icon-scissors.svg" alt="Scissors" />
+          </button>
+        </div>
+
+        <div class="rock-con">
+          <button data-id="rock">
+            <img src="./images/icon-rock.svg" alt="Rock" />
+          </button>
+        </div>
+      </section>
+
+      <!-- Result Section -->
+      <section class="result-sec hidden"></section>
+
+      <!-- Modal Section -->
+      <section class="modal-sec">
+        <button class="modal-sec__button">Rule</button>
+
+        <section class="modal">
+          <div class="modal__top">
+            <h2 class="modal__headline">Rules</h2>
+            <button class="modal__button">
+              <img src="./images/icon-close.svg" alt="Close Icon" />
+            </button>
+          </div>
+
+          <div class="modal__image">
+            <img src="./images/image-rules.svg" alt="Rules" />
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- JS -->
+    <script src="./app.js"></script>
+  </body>
+</html>
